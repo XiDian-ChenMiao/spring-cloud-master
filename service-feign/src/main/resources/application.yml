@@ -1,0 +1,14 @@
+eureka-server:
+  hostname: localhost
+  port: 8761
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://${eureka-server.hostname}:${eureka-server.port}/eureka/
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feign
+
