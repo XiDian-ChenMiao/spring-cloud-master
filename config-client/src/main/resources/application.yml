@@ -1,0 +1,36 @@
+server:
+  port: 8881
+
+config-server:
+  hostname: localhost
+  port: 8888
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+      # uri: http://${config-server.hostname}:${config-server.port}/
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+
+eureka-server:
+  hostname: localhost
+  port: 8761
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://${eureka-server.hostname}:${eureka-server.port}/eureka/
+
+
+
+
+
+
