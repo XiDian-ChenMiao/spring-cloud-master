@@ -12,7 +12,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/XiDian-ChenMiao/spring-cloud-config # 仓库地址
+          uri: https://github.com/XiDian-ChenMiao/spring-cloud-master # 仓库地址
           search-paths: config # 仓库路径
           username:  # 访问用户名
           password:  # 访问密码
